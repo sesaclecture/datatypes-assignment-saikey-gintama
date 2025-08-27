@@ -4,30 +4,30 @@
 # ==========================
 
 drama1 = {
-    "제목": "",            # IMPLEMENT ME
-    "장르": "",            # IMPLEMENT ME
-    "주제": "",            # IMPLEMENT ME
-    "방영기간": "",         # IMPLEMENT ME  (예: "2024-01-01 ~ 2024-02-01")
-    "배우": [],            # IMPLEMENT ME  (예: ["홍길동", "김코딩"])
-    "명대사": ""           # IMPLEMENT ME  (예: "\"이 또한 지나가리라.\"")
+    "제목": "질투의 화신", 
+    "장르": "로코", 
+    "주제": "질투", 
+    "방영기간": "2016-08-24 ~ 2016-11-10",
+    "배우": ["조정석", "공효진"],
+    "명대사": "\"나 너 좋아해도 돼? 짝사랑만 할게\""
 }
 
 drama2 = {
-    "제목": "",            # IMPLEMENT ME
-    "장르": "",            # IMPLEMENT ME
-    "주제": "",            # IMPLEMENT ME
-    "방영기간": "",         # IMPLEMENT ME
-    "배우": [],            # IMPLEMENT ME
-    "명대사": ""           # IMPLEMENT ME
+    "제목": "시그널", 
+    "장르": "범죄", 
+    "주제": "시간을 초월한 미제사건 수사", 
+    "방영기간": "2016-01-22 ~ 2016-03-12",
+    "배우": ["이제훈", "김혜수", "조진웅"], 
+    "명대사": "\"절대 포기하지 마세요. 과거는 바뀔 수 있습니다.\""
 }
 
-new_title = input("새 드라마 제목: ")  
+new_title = input("새 드라마 제목(예: 응답하라 1988): ")  
 
-new_genre = ""                          # IMPLEMENT ME: input("새 드라마 장르: ")
-new_theme = ""                          # IMPLEMENT ME: input("새 드라마 주제: ")
-new_period = ""                         # IMPLEMENT ME: input("새 드라마 방영기간(예: 2024-01-01 ~ 2024-02-01): ")
-new_actors_input = ""                   # IMPLEMENT ME: input("새 드라마 배우들(쉼표로 구분): ")
-new_quote_raw = ""                      # IMPLEMENT ME: input("인상 깊었던 대사(따옴표 없이 입력): ")
+new_genre = input("새 드라마 장르(예: 일상): ")
+new_theme = input("새 드라마 주제(예: 가족): ")
+new_period = input("새 드라마 방영기간(예: 2015-11-06 ~ 2016-01-16): ")
+new_actors_input = input("새 드라마 배우들(예: 박보검, 이혜리, 류준렬): ")
+new_quote_raw = input("인상 깊었던 대사(예: 어른스러운 아이는 그저 투정이 없을 뿐이다): ")
 
 new_actors = new_actors_input.split(",")
 new_quote = f"\"{new_quote_raw}\""
@@ -38,16 +38,15 @@ drama3 = {
     "주제": new_theme,
     "방영기간": new_period,
     "배우": new_actors,
-    "명대사": new_quote
-}
+    "명대사": new_quote}
 
 
-upd_title = input("수정(덮어쓰기)할 제목(대상: drama2): ")  
-upd_genre = ""                         # IMPLEMENT ME: input("수정할 장르: ")
-upd_theme = ""                         # IMPLEMENT ME: input("수정할 주제: ")
-upd_period = ""                        # IMPLEMENT ME: input("수정할 방영기간: ")
-upd_actors_input = ""                  # IMPLEMENT ME: input("수정할 배우들(쉼표로 구분): ")
-upd_quote_raw = ""                     # IMPLEMENT ME: input("수정할 명대사(따옴표 없이 입력): ")
+upd_title = input("수정(덮어쓰기)할 제목(대상: drama2) (예: 사이키쿠스오의 재난): ")  
+upd_genre = input("수정할 장르(예: 일상): ")
+upd_theme = input("수정할 주제(예: 초능력): ")
+upd_period = input("수정할 방영기간(예: 2016-07-11 ~ 2018-12-28): ")
+upd_actors_input = input("수정할 배우들(예: 쿠스오, 슌): ")
+upd_quote_raw = input("수정할 명대사(예: 어흑): ")
 
 upd_actors = upd_actors_input.split(",")
 upd_quote = f"\"{upd_quote_raw}\""
